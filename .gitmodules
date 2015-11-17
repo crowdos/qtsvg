@@ -1,0 +1,3 @@
+[submodule "qtsvg"]
+	path = qtsvg
+	url = git@github.com:qtproject/qtsvg.git
