@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@ --builddirectory=build --sourcedirectory=qtsvg --parallel --dbg-package=qtsvg5-dbg
+
+override_dh_auto_configure:
+	# Not sure why we need to touch that file to run syncqt
+	touch qtsvg/.git
+	mkdir build && cd build && qmake ../qtsvg/
+
+override_dh_install:
+	rm -f debian/tmp/usr/lib/*.la
+	rm -f debian/tmp/usr/lib/cmake/Qt5Svg/*Plugin.cmake
+	dh_install --fail-missing
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -rf build
+	rm -rf qtsvg/.git

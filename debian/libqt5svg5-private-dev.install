@@ -1,0 +1,10 @@
+usr/share/qt5/mkspecs/modules/qt_lib_svg_private.pri
+usr/include/qt5/QtSvg/5.5.1/QtSvg/private/qsvgstructure_p.h
+usr/include/qt5/QtSvg/5.5.1/QtSvg/private/qsvghandler_p.h
+usr/include/qt5/QtSvg/5.5.1/QtSvg/private/qsvgnode_p.h
+usr/include/qt5/QtSvg/5.5.1/QtSvg/private/qsvgtinydocument_p.h
+usr/include/qt5/QtSvg/5.5.1/QtSvg/private/qtsvgglobal_p.h
+usr/include/qt5/QtSvg/5.5.1/QtSvg/private/qsvggraphics_p.h
+usr/include/qt5/QtSvg/5.5.1/QtSvg/private/qsvgstyle_p.h
+usr/include/qt5/QtSvg/5.5.1/QtSvg/private/qsvgfunctions_wince_p.h
+usr/include/qt5/QtSvg/5.5.1/QtSvg/private/qsvgfont_p.h
